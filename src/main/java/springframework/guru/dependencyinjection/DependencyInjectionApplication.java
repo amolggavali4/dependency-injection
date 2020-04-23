@@ -34,6 +34,7 @@ public class DependencyInjectionApplication {
         SystemProperties props = ctx.getBean(SystemProperties.class);
         System.out.println(props.getEnvironment());
         System.out.println("Java home "+props.getJavaHome());
+        System.out.println("Property set outside the folder/classpath :"+props.getMyprop());
     }
 
 }
