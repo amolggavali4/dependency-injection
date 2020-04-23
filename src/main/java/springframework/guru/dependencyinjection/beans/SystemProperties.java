@@ -13,7 +13,6 @@ public class SystemProperties {
     private Environment environment;
     @Value("${dummy}")
     private String myprop;
-
     public String getEnvironment() {
         return environment.toString();
     }
