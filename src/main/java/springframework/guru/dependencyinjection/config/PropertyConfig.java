@@ -27,9 +27,9 @@ public class PropertyConfig {
         fds.setDbUrl(dbUrl);
         return fds;
     }*/
+
     @Bean
     public static PropertySourcesPlaceholderConfigurer properties(){
-        PropertySourcesPlaceholderConfigurer properties = new PropertySourcesPlaceholderConfigurer();
-        return properties;
+        return new PropertySourcesPlaceholderConfigurer();
     }
 }
